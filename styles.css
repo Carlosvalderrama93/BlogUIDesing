@@ -1,69 +1,81 @@
-/*Formating page style*/
+/*Formating Document Style*/
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: Montserrat;
-  font-size: 1em;
 }
 
-/*Stylizing Nav Bar*/
+/*Adding CSS Grid*/
+.grid-container {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-.menu {
-  display: flex;
+/*Style of Nav Bar*/
+.nav-var {
+  background-color: #1a1a2e;
   height: 4em;
-  font-weight: 600;
-  background-color: #f9f8f9;
-  font-size: 0.9em;
+  display: grid;
+  grid-column: 1 / 5;
+  border-bottom: 0.0625em solid #323549;
+}
+
+.list-nav {
+  display: flex;
   align-items: center;
+  font-weight: 500;
+  justify-content: space-around;
 }
-.main-nav {
-  width: 70%;
-  padding-left: 5%;
+
+#logo {
+  text-transform: uppercase;
+  padding: 0 5%;
 }
-nav {
-  width: 50%;
-}
-.form-nav {
-  width: 30%;
-}
-ul {
+
+.list-nav li {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  padding: 0 1em;
 }
-.main-nav a {
-  color: #000;
+
+.list-nav a {
   text-decoration: none;
+  color: #efedf6;
+  font-size: 0.9em;
 }
 
-/*Stylizing cover page*/
+/*Form Nav Search of nav Menu*/
+.form-nav {
+  border-radius: 25%;
+  padding: 0 10% 0 30%;
+}
 
+.form-nav input {
+  line-height: 2em;
+  background: #1a1a2e;
+  text-align: center;
+  border-radius: 1em;
+  border: 0.1rem solid;
+  border-color: #efedf6;
+}
+
+.form-nav ::placeholder {
+  color: #efedf6;
+  font-weight: 600;
+  letter-spacing: 0.0125em;
+}
+.form-nav [type="submit"] {
+  background-color: #896bff;
+  width: 2.5em;
+  color: #1a1a2e;
+  border: #896bff;
+}
+
+/*Style of Cover Page*/
 .cover-page {
-  background-color: #13131e;
-  height: 40em;
+  background-color: aqua;
   display: flex;
-  align-items: center;
-  
-}
-.cover-page article {
-    color: #f9f8f9;
-    align-items: center;
-    padding: 10%;
-    max-width: 65%;
-}
-.cover-page h2 {
-    font-size: 3.5em;
-    padding: 3% 0;
-}
-.cover-page p {
-    padding: 5% 0;
-}
-.cover-page a {
-    color: #f9f8f9;
-    text-decoration: none;
-}
-.cover-page img {
-    max-width: 50%;
 }
 
-
+.img-cover {
+}
