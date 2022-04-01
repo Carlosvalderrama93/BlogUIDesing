@@ -2,30 +2,23 @@
 * {
   padding: 0;
   margin: 0;
+  border: 0;
   font-family: Montserrat;
-}
-
-/*Adding CSS Grid*/
-.grid-container {
-  background-color: yellow;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 /*Style of Nav Bar*/
 .nav-var {
   background-color: #1a1a2e;
-  height: 4em;
-  display: grid;
-  grid-column: 1 / 5;
-  border-bottom: 0.0625em solid #323549;
+  height: 4rem;
+  border-bottom: 0.0625rem solid #323549;
 }
 
 .list-nav {
   display: flex;
   align-items: center;
   font-weight: 500;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 0.9rem;
 }
 
 #logo {
@@ -35,13 +28,13 @@
 
 .list-nav li {
   list-style: none;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .list-nav a {
   text-decoration: none;
   color: #efedf6;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 /*Form Nav Search of nav Menu*/
@@ -51,10 +44,10 @@
 }
 
 .form-nav input {
-  line-height: 2em;
+  line-height: 2rem;
   background: #1a1a2e;
   text-align: center;
-  border-radius: 1em;
+  border-radius: 1rem;
   border: 0.1rem solid;
   border-color: #efedf6;
 }
@@ -62,20 +55,67 @@
 .form-nav ::placeholder {
   color: #efedf6;
   font-weight: 600;
-  letter-spacing: 0.0125em;
+  letter-spacing: 0.0125rem;
 }
 .form-nav [type="submit"] {
   background-color: #896bff;
-  width: 2.5em;
+  width: 2.5rem;
   color: #1a1a2e;
   border: #896bff;
 }
 
 /*Style of Cover Page*/
+
 .cover-page {
-  background-color: aqua;
   display: flex;
+  align-items: center;
+  color: #efedf6;
+  background-color: #13131e;
 }
 
-.img-cover {
+.text-cover-page {
+  display: flex;
+  width: 50%;
+  padding: 2rem;
+  justify-content: center;
 }
+
+.text-cover-page h2 {
+  width: 24rem;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.text-cover-page p {
+  width: 24rem;
+  padding-bottom: 2rem;
+  color: #aebecf;
+  font-weight: 600;
+  line-height: 1.7rem;
+}
+
+.text-cover-page a {
+  background-color: #896bff;
+  border-color: #896bff;
+  color: #10101d;
+  padding: 10px 20px;
+  border-radius: 1.56rem;
+  text-decoration: none;
+  letter-spacing: 0.0125rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 100.18rem;
+}
+
+/*Image cover*/
+
+.img-cover {
+  background-color: #896bff;
+}
+.img-cover img {
+  display: flex;
+  max-width: 100%;
+}
+
+
