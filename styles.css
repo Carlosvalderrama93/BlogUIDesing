@@ -52,7 +52,6 @@
   font-size: 0.8rem;
 
   color: #efedf6;
-  border-right-width: 0; /*No sé pa que sirve*/
   width: 100%;
   font-weight: 600;
   width: 15rem;
@@ -147,7 +146,7 @@
 .img-big-news {
   width: 580px;
   height: 475px;
-  object-fit: cover; /*Imagen al tamaño del div*/
+  object-fit: cover; /*Para no redimencionar la imagen*/
   text-align: center;
   border-radius: 2rem;
 }
@@ -191,7 +190,7 @@
 }
 .writter-info img {
   width: 30px;
-  border-radius: 180px; /*No se ve circular*/
+  border-radius: 180px;
   margin-right: 1rem;
 }
 .writter-info p {
@@ -228,6 +227,7 @@
   border-radius: 0.7rem;
   margin-bottom: 1rem;
 }
+
 .text-little-news {
   display: flex;
   flex-direction: column;
@@ -255,7 +255,6 @@
 }
 
 /*Especial New*/
-
 .special-new {
   display: flex;
   flex-direction: column;
@@ -310,7 +309,6 @@
 }
 
 /*Option to view more News*/
-
 .next-page a {
   display: flex;
   justify-content: center;
@@ -321,7 +319,6 @@
 }
 
 /*Section Newsletter Subscribe*/
-
 .subscribe {
   background: linear-gradient(180deg, #10101d, #1a1a2e);
   color: #efedf6;
@@ -347,22 +344,17 @@
 
 .subscribe-form form {
   width: 31.25rem;
-  display: flex; /*No sé su función*/
-  flex-direction: row; /*No sé su función*/
+  display: flex;
   height: 3.125rem;
-  margin-bottom: 0; /*No sé su función*/
   padding: 0 1.25rem;
 }
 
 .subscribe-form input {
-  flex: 1; /*No sé pa que sirve*/
   border-radius: 1.5625rem 0 0 1.5625rem;
   color: #dbd8e3;
   border: 0.0625rem solid #323549;
   background-color: #1a1a2e;
   text-align: center;
-
-  border-right-width: 0; /*No sé pa que sirve*/
   width: 100%;
   font-weight: 600;
 }
@@ -382,7 +374,6 @@ footer {
   height: 5rem;
   background-color: #10101d;
   color: #efedf6;
-
   margin: auto;
   justify-content: center;
   align-items: center;
