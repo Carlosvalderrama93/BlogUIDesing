@@ -39,33 +39,45 @@
 
 /*Form Nav Search of nav Menu*/
 .form-nav {
-  border-radius: 25%;
   padding: 0 10% 0 30%;
+  display: flex;
+  height: 2rem;
 }
 
 .form-nav input {
-  line-height: 2rem;
-  background: #1a1a2e;
+  border-radius: 1.5625rem 0 0 1.5625rem;
+  border: 0.0625rem solid #323549;
+  background-color: #1a1a2e;
   text-align: center;
-  border-radius: 1rem;
-  border: 0.1rem solid;
-  border-color: #efedf6;
+  font-size: 0.8rem;
+
+  color: #efedf6;
+  border-right-width: 0; /*No sé pa que sirve*/
+  width: 100%;
+  font-weight: 600;
+  width: 15rem;
 }
 
 .form-nav ::placeholder {
+  text-align: center;
   color: #efedf6;
-  font-weight: 600;
-  letter-spacing: 0.0125rem;
+  opacity: 60%;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
 }
-.form-nav [type="submit"] {
+
+.form-nav button {
+  flex-shrink: 0;
+  padding: 0 1.25rem;
+  border-radius: 0 1.5625rem 1.5625rem 0;
+  color: #10101d;
+  border-color: #896bff;
   background-color: #896bff;
-  width: 2.5rem;
-  color: #1a1a2e;
-  border: #896bff;
+  text-align: center;
+  font-weight: 600;
 }
 
 /*Style of Cover Page*/
-
 .cover-page {
   display: flex;
   min-width: 100%;
@@ -121,7 +133,7 @@
 .news-container {
   justify-items: center;
   background-color: #1a1a2e;
-  padding: 1rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 .big-news {
@@ -297,5 +309,83 @@
   padding-bottom: 2rem;
 }
 
-.special-new .writter-info {
+/*Option to view more News*/
+
+.next-page a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #aebecf;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+}
+
+/*Section Newsletter Subscribe*/
+
+.subscribe {
+  background: linear-gradient(180deg, #10101d, #1a1a2e);
+  color: #efedf6;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subscribe h3 {
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  padding: 1rem 0;
+}
+
+.subscribe > p {
+  color: #dad5f3;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.subscribe-form form {
+  width: 31.25rem;
+  display: flex; /*No sé su función*/
+  flex-direction: row; /*No sé su función*/
+  height: 3.125rem;
+  margin-bottom: 0; /*No sé su función*/
+  padding: 0 1.25rem;
+}
+
+.subscribe-form input {
+  flex: 1; /*No sé pa que sirve*/
+  border-radius: 1.5625rem 0 0 1.5625rem;
+  color: #dbd8e3;
+  border: 0.0625rem solid #323549;
+  background-color: #1a1a2e;
+  text-align: center;
+
+  border-right-width: 0; /*No sé pa que sirve*/
+  width: 100%;
+  font-weight: 600;
+}
+
+.subscribe-form button {
+  flex-shrink: 0;
+  padding: 0 1.25rem;
+  border-radius: 0 1.5625rem 1.5625rem 0;
+  color: #10101d;
+  border-color: #896bff;
+  background-color: #896bff;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer {
+  height: 5rem;
+  background-color: #10101d;
+  color: #efedf6;
+
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
 }
