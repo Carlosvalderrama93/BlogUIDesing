@@ -1,6 +1,6 @@
 # Firts page
 
-![IMG web finished] (media/IMG-finished-project.png)
+![IMG web finished] (https://github.com/Carlosvalderrama93/Cuestionario-FAS/blob/main/Media/IMG-finished-project.png)
 
 This Homepage is the first page that I develop.
 At firts I wanted to do it with CSS Grid, but that development metodology was hard for me.
